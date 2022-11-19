@@ -1,4 +1,4 @@
-package config;
+package br.com.ferry.dsmeta.config;
 
 import java.util.Arrays;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package entities;
+package br.com.ferry.dsmeta.entities;
 
 import java.time.LocalDate;
 
@@ -27,6 +27,7 @@ public class Sale {
     
     private String sellerName;
     private Integer visited;
-    private Integer amount;
+    private Integer deals;
+    private Double amount;
     private LocalDate date;
 }
