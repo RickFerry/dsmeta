@@ -11,7 +11,6 @@ import com.twilio.type.PhoneNumber;
 
 import br.com.ferry.dsmeta.entities.Sale;
 import br.com.ferry.dsmeta.repositories.SaleRepository;
-import lombok.AllArgsConstructor;
 
 @Service
 public class SmsService {
@@ -37,8 +36,7 @@ public class SmsService {
         Twilio.init(twilioSid, twilioKey);
         PhoneNumber to = new PhoneNumber(twilioPhoneTo);
         PhoneNumber from = new PhoneNumber(twilioPhoneFrom);
-        Message message = Message.creator(to, from, msg).create();
-        System.out.println(message.getSid());
+        Message.creator(to, from, msg).create();
     }
 
     private String msgMount(Long id) throws NotFoundException {
